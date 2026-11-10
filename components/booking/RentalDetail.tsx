@@ -178,7 +178,7 @@ function Detail({ listing }: { listing: RentalListing }) {
         </Bar>
         <p className={cx(s.secure, s.deskOnly)}>
           <Icon name="lock" size={14} />
-          Pay securely with Paystack. VAT added at checkout.
+          Pay securely with Paystack. No hidden fees.
         </p>
       </aside>
     </div>

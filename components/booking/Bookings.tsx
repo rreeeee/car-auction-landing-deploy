@@ -290,7 +290,7 @@ function Detail({ id }: { id: string }) {
     <div className={s.section}>
       <h2 className={s.h2}>Payment</h2>
       <Row label="Rental" value={formatNaira(b.rental)} />
-      <Row label="VAT (7.5%)" value={formatNaira(b.vat)} />
+      {b.vat > 0 && <Row label="VAT" value={formatNaira(b.vat)} />}
       <div className={s.totalRow}>
         <span className={s.totalLabel}>{b.paidAt ? "Total paid" : "Total"}</span>
         <span className={s.totalValue}>{formatNaira(b.total)}</span>

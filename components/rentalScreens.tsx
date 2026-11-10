@@ -329,10 +329,9 @@ export function ReviewScreen({ T, C }: ScreenProps) {
       </div>
       <div style={{ position: "absolute", left: 24, right: 24, top: 420, paddingTop: 18, borderTop: "1px solid #ECEBE6", display: "flex", flexDirection: "column", gap: 12 }}>
         <Row k="3 × 24 hrs" v={fmt(810000)} />
-        <Row k="VAT (7.5%)" v={fmt(60750)} />
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", paddingTop: 12, borderTop: `1.5px solid ${INK}` }}>
           <span style={{ font: `600 16px ${DISPLAY}` }}>Total</span>
-          <span style={{ font: `700 26px ${NUM}`, letterSpacing: "-.02em" }}>{fmt(Math.round((870750 * count) / 250) * 250 || 0)}</span>
+          <span style={{ font: `700 26px ${NUM}`, letterSpacing: "-.02em" }}>{fmt(Math.round((810000 * count) / 250) * 250 || 0)}</span>
         </div>
       </div>
       <div style={{ position: "absolute", left: 24, right: 24, top: 604, display: "flex", gap: 12, alignItems: "center" }}>
@@ -387,7 +386,7 @@ export function BookedScreen({ T, C }: ScreenProps) {
         <div style={{ padding: "14px 18px 18px", display: "flex", flexDirection: "column", gap: 10 }}>
           <Row k="Dates" v="Sat 12 → Tue 15 Dec" />
           <Row k="Booking" v="72 hrs · Driver" />
-          <Row k="Total" v={fmt(870750)} />
+          <Row k="Total" v={fmt(810000)} />
         </div>
       </div>
     </div>

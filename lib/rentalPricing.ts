@@ -3,7 +3,8 @@
 // same rules; keep the two in step. (Site-only change: interstate may be null, "on request".)
 import type { BoatRates, RentalKind, RentalPlan, RentalZone, VehicleRates } from "./rentalModels";
 
-export const RENTAL_VAT_BPS = 750;
+// VAT is not charged on rentals (kept at 0 to match the backend).
+export const RENTAL_VAT_BPS = 0;
 export const RENTAL_LATE_CANCEL_MINUTES = 60;
 export const RENTAL_LATE_CANCEL_BPS = 2500;
 export const RENTAL_MIN_LEAD_MINUTES = 60;

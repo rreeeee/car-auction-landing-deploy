@@ -118,7 +118,6 @@ function Review({ listing, draft }: { listing: RentalListing; draft: StoredDraft
   const totals = quote && (
     <div className={s.totals}>
       <Row label="Rental" value={`${formatNaira(quote.rental)}${quote.fromPrice ? "+" : ""}`} />
-      <Row label="VAT (7.5%)" value={formatNaira(quote.vat)} />
       <div className={s.totalRow}>
         <span className={s.totalLabel}>Total</span>
         <span className={s.totalValue}>{formatNaira(quote.total)}</span>
